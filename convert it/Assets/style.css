@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+:root {
+	--mainbg: #6d3cdc;
+	--mainclr: #ffffff;
+	--bodybg: #e7e4e4;
+	--bodyacc: #ffffff;
+	--bodymclr: #6d3cdc;
+	--bodybclr: #353535;
+}
+.darkmode {
+	--mainbg: #5b21b6;
+	--mainclr: #ffffff;
+	--bodybg: #1f2937;
+	--bodyacc: #273549;
+	--bodymclr: #ccc1ff;
+	--bodybclr: #ffffff;
+}
+#nightModeImg {
+	display: inline-block;
+	position: fixed;
+	right: 0rem;
+	top: 0;
+	width: min(6vw, 2rem);
+	height: min(6vw, 2rem);
+	background: url(./day-night-icon-22.jpg) center center/cover;
+	background-color: #ffffff;
+}
+
+body {
+	background-color: var(--bodybg);
+	font-family: 'Inter', sans-serif;
+	text-align: center;
+}
+main {
+	background-color: var(--mainbg);
+	color: var(--mainclr);
+	padding-top: min(6vw, 3.3rem);
+	padding-bottom: min(6vw, 2.5rem);
+}
+
+main h1 {
+	font-weight: 800;
+	font-size: min(5vw, 3.5rem);
+}
+
+main input {
+	display: block;
+	border: 1.5px solid var(--mainclr);
+	background: var(--mainbg);
+	width: min(17vw, 6.7rem);
+	height: min(13vw, 5rem);
+	text-align: center;
+	color: var(--mainclr);
+	font-size: min(8vw, 3.1rem);
+	font-weight: 800;
+	font-family: 'Inter', sans-serif;
+	margin: min(5vw, 2.5rem) auto;
+	border-radius: 3px;
+}
+
+input:focus {
+	border: 2px solid var(--mainclr);
+}
+
+input::placeholder {
+	color: var(--mainclr);
+}
+
+input:focus::placeholder {
+	color: transparent;
+}
+
+main button {
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: min(3vw, 1.2rem);
+	padding: min(2vw, 1rem);
+	background-color: var(--mainclr);
+	color: var(--mainbg);
+	font-family: 'Inter', sans-serif;
+	border: none;
+	transition: box-shadow 0.2s;
+	box-shadow: rgba(17, 17, 26, 0.336) 0px 8px 24px,
+		rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+main button:hover {
+	box-shadow: none;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: min(6vw, 3.5rem) 1rem 0 1rem;
+	background-color: var(--bodybg);
+}
+
+section div {
+	display: flex;
+	flex-direction: column;
+	width: min(55vw, 17rem);
+	height: min(40vw, 15rem);
+	background-color: var(--bodyacc);
+	padding: 1.5em 0.7em 1em 0.7em;
+	margin-bottom: 2em;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.133) 0px 10px 36px 0px,
+		rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+section div h2 {
+	color: var(--bodymclr);
+	font-size: min(4.5vw, 1.5rem);
+	padding-bottom: 1em;
+}
+
+section div p {
+	color: var(--bodybclr);
+	margin: auto;
+	font-size: min(3.1vw, 1rem);
+}

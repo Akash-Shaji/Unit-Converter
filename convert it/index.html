@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./Assets/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Convert It</title>
+	</head>
+
+	<body>
+		<button id="nightModeImg"></button>
+		<main>
+			<h1>Metric/Imperial Unit Conversion</h1>
+			<input type="text" id="input" placeholder="1" />
+			<button id="Convert">Convert Now</button>
+		</main>
+		<section>
+			<div>
+				<h2>Length <br />(Meter/Feet)</h2>
+				<p id="metToFet">1 meter(s) = 3.281 feet(s)</p>
+				<hr />
+				<p id="fetToMet">1 feet(s) = 0.305 meter(s)</p>
+			</div>
+			<div>
+				<h2>Volume (Liters/Gallons)</h2>
+				<p id="litToGal">1 liter(s) = 0.264 gallon(s)</p>
+				<hr />
+				<p id="galToLit">1 gallons(s) = 3.785 liters(s)</p>
+			</div>
+			<div>
+				<h2>Mass (Kilograms/Pounds)</h2>
+				<p id="kgToP">1 kilogram(s) = 2.205 pound(s)</p>
+				<hr />
+				<p id="pToKg">1 pound(s) = 0.454 kilogram(s)</p>
+			</div>
+		</section>
+		<script src="./Assets/script.js"></script>
+	</body>
+</html>
